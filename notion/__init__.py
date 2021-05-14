@@ -2,6 +2,6 @@
 
 __author__ = """Karthikeyan Singaravelan"""
 __email__ = "tir.karthi@gmail.com"
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 from .notion import Notion

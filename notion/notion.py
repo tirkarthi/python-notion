@@ -8,7 +8,7 @@ __all__ = ["Notion"]
 class Notion(Consumer):
     def __init__(self, api_token, base_url="https://api.notion.com/v1/"):
         super().__init__(base_url=base_url)
-        self.session.headers["Authorization"] = "Bearer: {}".format(api_token)
+        self.session.headers["Authorization"] = "Bearer {}".format(api_token)
 
     @json
     @get("databases")
@@ -28,7 +28,7 @@ class Notion(Consumer):
 
     @json
     @get("users")
-    def get_users(self, *, notion_version: Header("Notion-Version")):
+    def get_users(self, *, notion_version: Header("Notion-Version") = None):
         """Retrieve all users."""
 
     @json
