@@ -12,10 +12,10 @@ class Notion(Consumer):
 
     @json
     @get("databases")
-    def get_user(
+    def get_databases(
         self,
         *,
-        notion_version: Header("Notion-Version"),
+        notion_version: Header("Notion-Version") = None,
         start_cursor: Query("start_cursor") = None,
         page_size: Query("page_size") = None,
     ):
@@ -45,7 +45,7 @@ class Notion(Consumer):
 
     @json
     @get("pages/{page_id}")
-    def get_page(self, *page_id: Path, notion_version: Header("Notion-Version")):
+    def get_page(self, *, page_id: Path, notion_version: Header("Notion-Version")):
         """Retrieve a page by page_id"""
 
     @json
