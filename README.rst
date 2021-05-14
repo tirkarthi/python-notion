@@ -3,8 +3,8 @@ notion
 ======
 
 
-.. image:: https://img.shields.io/pypi/v/pynotion.svg
-        :target: https://pypi.python.org/pypi/pynotion
+.. image:: https://img.shields.io/pypi/v/python-notion.svg
+        :target: https://pypi.python.org/pypi/python-notion
 
 A Python package for notion API at https://developers.notion.com/reference/intro.
 
